@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+    <!--                         main                                      -->
+    <div id="containerMain" style="display: block;" class="container">
+        <div class="container__top-block block">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="container__center-block center-block">
+            <div class="center-block__container">
+                <button id="buttonEdit" class="button">edit</button>
+                <button id="buttonStyle" class="button button--blue">style</button>
+            </div>
+        </div>
+        <div class="container__bottom-block block">
+            <div style="display: none;" class="edit">
+                <textarea class="edit__area area"></textarea>
+                <div class="edit__block-bnt">
+                    <button id="buttonAdd" class="button button--red">add</button>
+                    <button id="buttonSave" class="button button--green">save</button>
+                </div>
+            </div>
+            <div style="display: none;" class="style">
+                <form class="form-setting">
+                    <p class="style__text">Font size:</p>
+                    <div class="radio-container">
+                        <label class="radio-container__label"><input value="12" name="px" type="radio" class="radio-container__item">12px</label>
+                        <label class="radio-container__label"><input value="14" name="px" type="radio" class="radio-container__item">14px</label>
+                        <label class="radio-container__label"><input value="16" name="px" checked type="radio" class="radio-container__item">16px</label>
+                        <label class="radio-container__label"><input value="18" name="px" type="radio" class="radio-container__item">18px</label>
+                        <label class="radio-container__label"><input value="20" name="px" type="radio" class="radio-container__item">20px</label>
+                    </div>
+                    <p class="style__text">Font family:</p>
+                    <select class="select-container">
+                        <option value="Franklin Gothic Medium">Choose option</option>
+                        <option value="cursive">cursive</option>
+                        <option value="fantasy">fantasy</option>
+                        <option value="monospace">monospace</option>
+                        <option value="sans-serif">sans-serif</option>
+                    </select>
+                    <p class="style__text">Colors:</p>
+                    <div class="button-container">
+                        <button class="button-big">Color of Text</button>
+                        <button class="button-big">Background color</button>
+                    </div>
+                    <p class="style__text">Style:</p>
+                    <div class="checkbox-container">
+                        <label name="bold" class="checkbox-container__label"><input name="bold" class="checkbox-container__item" type="checkbox" value="bold">Bold text</label>
+                        <label name="italic" class="checkbox-container__label"><input name="italic" class="checkbox-container__item" type="checkbox" value="italic">Cursive text</label>
+                    </div>
+                </form>
+                <div style="display: none;" class="style__container-color">
+                    <div class="style__block-small style__block-small--c1"></div>
+                    <div class="style__block-small style__block-small--c2"></div>
+                    <div class="style__block-small style__block-small--c3"></div>
+                    <div class="style__block-small style__block-small--c4"></div>
+                    <div class="style__block-small style__block-small--c5"></div>
+                    <div class="style__block-small style__block-small--c6"></div>
+                    <div class="style__block-small style__block-small--c7"></div>
+                    <div class="style__block-small style__block-small--c8"></div>
+                    <div class="style__block-small style__block-small--c9"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--                         add                                      -->
+    <div id="containerAdd" style="display: none;" class="container">
+        <div class="block container__top-block">
+            <p class="title">Choose what you want:</p>
+            <div class="radio-container">
+                <label class="radio-container__label"><input value="table" name="question" type="radio" class="radio-container__item">table</label>
+                <label class="radio-container__label"><input value="list" name="question" type="radio" class="radio-container__item">list</label>
+            </div>
+            <form style="display: none;" class="form-table">
+                <div class="form-table__flex">
+                    <p class="text">Count TR:</p>
+                    <input id="countTr" placeholder="Count TR:" type="text" class="form-table__input">
+                </div>
+                <div class="form-table__flex">
+                    <p class="text">Count TD:</p>
+                    <input id="countTd" placeholder="Count TD:" type="text" class="form-table__input">
+                </div>
+                <p class="title-small title-small--mg-t10">Add style to your table:</p>
+                <div class="form-table__flex">
+                    <p class="text">Width of TD:</p>
+                    <input id='widthTd' placeholder="Width of TD:" type="text" class="form-table__input">
+                </div>
+                <div class="form-table__flex">
+                    <p class="text">Height of TD:</p>
+                    <input id='heightTd' placeholder="Height of TD:" type="text" class="form-table__input">
+                </div>
+                <div class="form-table__flex form-table__flex--center">
+                    <p class="text">Width of border:</p>
+                    <div class="form-table__flex form-table__flex--width80">
+                        <input id="widthBorder" placeholder="Width:" type="text" class="form-table__input form-table__input--small">
+                        <p class="text">Type of border:</p>
+                        <select id="typeBorder" class="select-container form-table__section">
+                            <option value="solid">solid</option>
+                            <option value="dashed">dashed</option>
+                            <option value="dotted">dotted</option>
+                        </select>
+                        <p class="text">Color of border:</p>
+                        <select id="colorBorder" class="select-container form-table__section">
+                            <option value="black">black</option>
+                            <option value="red">red</option>
+                            <option value="blue">blue</option>
+                            <option value="green">green</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="button-create">Create table</button>
+            </form>
+            <form style="display: none;" class="form-list">
+                <div class="form-list__flex">
+                    <p class="text">Count Li:</p>
+                    <input id="countLi" placeholder="Count Li:" type="text" class="form-list__input">
+                </div>
+                <div class="form-list__flex">
+                    <p class="text">Type of marks:</p>
+                    <select id="typeMarks" class="select-container form-list__section">
+                        <option value="circle">circle</option>
+                        <option value="disc">disc</option>
+                        <option value="square">square</option>
+                    </select>
+                </div>
+                <button class="button-create">Create table</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="./scripts/sctipt.js"></script>
+</body>
+</html>

@@ -1,0 +1,383 @@
+@import url(reset.css);
+body {
+  font-family: "Franklin Gothic Medium";
+  color: rgb(88, 88, 88);
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  font-size: 16px;
+  margin: 5px 0 5px 0;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 23px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+h4 {
+  font-size: 19px;
+}
+
+h5 {
+  font-size: 17px;
+}
+
+h6 {
+  font-size: 15px;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+.container__top-block {
+  margin-top: 20px;
+}
+.container__center-block {
+  display: flex;
+  justify-content: center;
+  margin: 7px 0 7px 0;
+}
+.container__bottom-block {
+  margin-bottom: 10px;
+}
+
+.block {
+  width: 100%;
+  min-height: 270px;
+  background-color: #eaefef;
+  border-radius: 5px;
+  border: 2px solid #cdd2d2;
+  padding: 20px;
+}
+
+.center-block__container {
+  width: 105px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  width: 50px;
+  height: 30px;
+  background-color: #ffc207;
+  color: black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fffba1;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #cd950a;
+}
+.button:focus {
+  outline: 3px solid #fffba1;
+}
+.button--blue {
+  background-color: #17a3b8;
+  color: #fff;
+  border: 1px solid #499199;
+}
+.button--blue:hover {
+  background-color: #187a92;
+}
+.button--blue:focus {
+  outline: 3px solid #499199;
+}
+.button--red {
+  background-color: #d83744;
+  color: #fff;
+  border: 1px solid #a14d57;
+  margin-right: 5px;
+}
+.button--red:hover {
+  background-color: #cc2331;
+}
+.button--red:focus {
+  outline: 3px solid #a14d57;
+}
+.button--green {
+  background-color: #27a743;
+  color: #fff;
+  border: 1px solid #34c351;
+}
+.button--green:hover {
+  background-color: #228836;
+}
+.button--green:focus {
+  outline: 3px solid #34c351;
+}
+
+.area {
+  width: 100%;
+  height: 150px;
+  background-color: #fff;
+  border: 2px solid #cdd2d2;
+  border-radius: 5px;
+}
+.area:focus {
+  border: 3px solid #b2d1f4;
+}
+
+.edit__block-bnt {
+  display: flex;
+  margin-top: 5px;
+}
+
+.style {
+  position: relative;
+}
+.style__text {
+  font-size: 16px;
+  color: rgb(88, 88, 88);
+}
+.style__container-color {
+  position: absolute;
+  right: 5%;
+  top: 40px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.style__block-small {
+  width: 33.33%;
+  height: 33.35%;
+}
+.style__block-small--c1 {
+  background-color: red;
+}
+.style__block-small--c2 {
+  background-color: blue;
+}
+.style__block-small--c3 {
+  background-color: #2b9149;
+}
+.style__block-small--c4 {
+  background-color: #3b4246;
+}
+.style__block-small--c5 {
+  background-color: yellow;
+}
+.style__block-small--c6 {
+  background-color: #e7408a;
+}
+.style__block-small--c7 {
+  background-color: #fff;
+}
+.style__block-small--c8 {
+  background-color: #6e43bf;
+}
+.style__block-small--c9 {
+  background-color: #17a3b8;
+}
+
+.radio-container__label {
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.radio-container__item::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: lightgray;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.radio-container__item:checked:before {
+  border: 5px solid #127ee9;
+}
+
+.select-container {
+  width: 300px;
+  height: 30px;
+  border: 1px solid lightgray;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  -webkit-appearance: menulist;
+     -moz-appearance: menulist;
+          appearance: menulist;
+}
+.select-container:focus {
+  outline: 3px solid #b2d1f4;
+}
+
+.button-container {
+  display: flex;
+  width: 210px;
+  justify-content: space-between;
+}
+
+.button-big {
+  width: 100px;
+  height: 30px;
+  background-color: #6b767b;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.button-big:hover {
+  background-color: #5d646a;
+}
+.button-big:focus {
+  outline: 3px solid #a2a8ab;
+}
+
+.checkbox-container__item {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: lightgray;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+.checkbox-container__item:checked {
+  background-color: #127ee9;
+  -webkit-appearance: checkbox;
+     -moz-appearance: checkbox;
+          appearance: checkbox;
+}
+.checkbox-container__label {
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.fs12 {
+  font-size: 12px;
+}
+
+.fs14 {
+  font-size: 14px;
+}
+
+.fs16 {
+  font-size: 16px;
+}
+
+.fs18 {
+  font-size: 18px;
+}
+
+.fs20 {
+  font-size: 20px;
+}
+
+.title {
+  font-size: 1.5em;
+  color: #000;
+}
+
+.title-small {
+  font-size: 20px;
+  color: #000;
+}
+.title-small--mg-t10 {
+  margin-top: 10px;
+}
+
+.text {
+  font-size: 14px;
+}
+
+.form-table__flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.form-table__flex--center {
+  align-items: center;
+}
+.form-table__flex--width80 {
+  width: 80%;
+}
+.form-table__input {
+  width: 80%;
+  height: 30px;
+  background-color: #fff;
+  border: 2px solid #cdd2d2;
+  border-radius: 5px;
+  padding-left: 5px;
+  font-size: 14px;
+}
+.form-table__input:focus {
+  border: 3px solid #b2d1f4;
+}
+.form-table__input--small {
+  width: 100px;
+}
+.form-table__input::-moz-placeholder {
+  color: rgb(135, 135, 135);
+}
+.form-table__input::placeholder {
+  color: rgb(135, 135, 135);
+}
+.form-table__section {
+  width: 100px;
+}
+
+.button-create {
+  color: #fff;
+  border: 1px solid #34c351;
+  width: 90px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  height: 30px;
+  background-color: #27a743;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.button-create:hover {
+  background-color: #228836;
+}
+.button-create:focus {
+  outline: 3px solid #34c351;
+}
+
+.form-list__input {
+  width: 80%;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #cdd2d2;
+  border-radius: 5px;
+  padding-left: 5px;
+  font-size: 14px;
+}
+.form-list__input:focus {
+  border: 3px solid #b2d1f4;
+}
+.form-list__input--small {
+  width: 100px;
+}
+.form-list__input::-moz-placeholder {
+  color: rgb(135, 135, 135);
+}
+.form-list__input::placeholder {
+  color: rgb(135, 135, 135);
+}
+.form-list__flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.form-list__section {
+  width: 80%;
+}/*# sourceMappingURL=main.css.map */
